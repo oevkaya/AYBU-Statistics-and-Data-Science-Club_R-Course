@@ -150,17 +150,6 @@ load("c:/ozan/Desktop/filename.RData")
 #read .csv file with labels in first row
 read.csv(filename="C:/ozan/Desktop/filename.csv", header=T) 
 
-# Basic Plotting ----------------------------------------------------------
-
-hist() #create a histogram of the values in x by hist(x)
-stem() #create a stem and leaf plot of the values in x by stem(x)
-boxplot() #create a boxplot of the values in x by boxplot(x)
-plot() #scatterplot of x vs. y by plot(x,y); for more parameters see help(plot.default)
-
-lines() #add a (regression) line to a plot by lines(x,fit$fitted)
-abline() #add a straight line to a scatterplot
-points() #add additional points (different plotting character) to a plot by points(x,y2,pch=5)
-
 
 # Functions for saving graphic output -------------------------------------
 
@@ -175,3 +164,16 @@ source("script1.R") # submit the R code from script1.R to the current session
 
 sink() # the text output will be appended to the file myoutput
 dev.off()
+
+# Basic Plotting ----------------------------------------------------------
+
+hist() #create a histogram of the values in x by hist(x)
+stem() #create a stem and leaf plot of the values in x by stem(x)
+boxplot() #create a boxplot of the values in x by boxplot(x)
+plot() #scatterplot of x vs. y by plot(x,y); for more parameters see help(plot.default)
+
+lines() #add a (regression) line to a plot by lines(x,fit$fitted)
+abline() #add a straight line to a scatterplot
+points() #add additional points (different plotting character) to a plot by points(x,y2,pch=5)
+
+
